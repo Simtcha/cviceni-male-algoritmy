@@ -89,6 +89,7 @@ const vzdalenostodpetky = (array) => {
         let numvzdalenost = array.indexOf(5) - array.indexOf(num)
         seznamek.push(`# ${num} je vzdálené od čísla 5 o ${numvzdalenost} pozic`)    
     })
+    document.body.innerHTML+=`<p>Seznam vzdáleností každého čísla ze seznamu od čísla 5:</P>`
     document.body.innerHTML+=seznamek
 }
 vzdalenostodpetky(numbers)
